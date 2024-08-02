@@ -31,3 +31,8 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+task getReport(type:Exec){
+    commandLine 'adb', 'pull', '/sdcard/googletest/test_outputfiles/allure-results',
+            "C:\\ASProjects\\fmh_android_15_03_24\\reportsAllure"
+}
