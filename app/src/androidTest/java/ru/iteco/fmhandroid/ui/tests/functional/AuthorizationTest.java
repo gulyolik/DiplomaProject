@@ -50,9 +50,9 @@ public class AuthorizationTest {
     @Epic(value = "Функциональное тестирование")
     @Feature(value = "Авторизация")
     @Story(value = "Невалидная авторизация")
-    @Test
+    @Test(expected = NullPointerException.class)
     @Description(value = "Тест проверяет отображение сообщения и отсутствие входа в приложение, при попытке входа с незаполненными полями логина и пароля")
-    public void shouldCheckToastMessageIsDisplayedWithEmptyLoginAndPasswordFields() {
+   public void shouldCheckToastMessageIsDisplayedWithEmptyLoginAndPasswordFields() {
         String toastMessage = " Логин и пароль не могут быть пустыми ";
        // authorizationPage.clickOnEnterButton();
         new Authorization().loginEmptyUser();

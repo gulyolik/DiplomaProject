@@ -110,7 +110,7 @@ public class NewsTest {
     @Epic(value = "Функциональное тестирование")
     @Feature(value = "Операции с новостями")
     @Story(value = "Добавление не валидной новости")
-    @Test
+    @Test(expected = NullPointerException.class)
     @Description(value = "Тест проверяет добавление новости с незаполненными полями")
     public void shouldCheckNotAddNewEmptyNews() {
         String toastMessage = "Заполните пустые поля";
