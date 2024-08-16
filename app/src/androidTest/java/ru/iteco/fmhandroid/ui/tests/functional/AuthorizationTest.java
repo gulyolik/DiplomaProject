@@ -67,7 +67,7 @@ public class AuthorizationTest {
     @Test(expected = NullPointerException.class)
     @Description(value = "Тест проверяет отображение сообщения и отсутствие входа в приложение, при попытке входа с невалидными данными")
     public void shouldCheckToastMessageIsDisplayed() {
-        String toastMessage = "Что-то пошло не так. Попробуйте позднее.";
+        String toastMessage = "Не правильный логин или пароль";
         new Authorization().invalidLogin();
 
         ToastMatcher.checkToastMessageIsDisplayed(toastMessage);
