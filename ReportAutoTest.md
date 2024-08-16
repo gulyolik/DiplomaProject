@@ -19,4 +19,4 @@
 Реализован тест-кейс, отображающий ошибку, описанную в Issue 
 <a href = "https://github.com/gulyolik/DiplomaProject/issues/3">
 Сообщение отображает неверный текст, на странице авторизации, при вводе неверного логина или пароля.</a>.
-<img src = "screenshots/Проверка ошибок.png">
+<img src = "screenshots/Проверка ошибки.png">
